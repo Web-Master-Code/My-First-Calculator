@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Calculator</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="calculator-minimalistic-svgrepo-com.svg">
+</head>
+<body>
+
+    <script src="control.js"></script>
+    
+    <div class="calc-con">
+
+        <div class="calc-con-style">
+
+            <div class="result-con">
+                <div id="X">0</div>
+                <div id="theType"></div>
+                <div id="Y">0</div>
+                <div id="equal">=</div>
+                <div id="result"></div>
+            </div>
+            <div class="numbers-con">
+                <div class="X-numbers">
+                    <button class="X-counterPlus" onclick="xCounterPlus();">Plus X</button>
+                    <button class="X-counterMines" onclick="xCounterMines();">Mines X</button>
+                </div>
+                <div class="the-type">
+                    <button onclick="plusSign();">+</button>
+                    <button onclick="minesSign();">-</button>
+                    <button onclick="multiSign();">*</button>
+                    <button onclick="divSign();">/</button>
+                    <button onclick="equal();">=</button>
+                </div>
+                <div class="Y-numbers">
+                    <button class="Y-counterPlus" onclick="yCounterPlus();">Plus Y</button>
+                    <button class="Y-counterMines" onclick="yCounterMines();">Mines Y</button>
+                </div>
+                <!--<button onclick="reset();">Reset</button>-->
+            </div>    
+
+        </div>
+
+    </div>
+
+</body>
+</html>
